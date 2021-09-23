@@ -17,7 +17,18 @@ Checks if the queue is empty or not. Return true or false.
 
 
 /**************************************************** SOLUTION ************************************************************************/
-
+template <typename T>
+class Node
+{
+    public:
+    T data;
+    Node<T> *next;
+    Node(T data)
+    {
+        this->data = data;
+        next = NULL;
+    }
+};
 
 template<typename T>
 class Queue {
